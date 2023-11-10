@@ -8,6 +8,7 @@ import {
     MenuItem,
     TextField,
     InputAdornment,
+    Container,
 } from '@mui/material';
 import {
     ArrowDropDown as ArrowDropDownIcon,
@@ -31,6 +32,7 @@ function NavBar() {
 
     return (
         <Box position="static">
+          <Container maxWidth="lg">
             <Toolbar sx={{ width: '80vw' }}>
                 <TextField fullWidth label="" id="fullWidth" placeholder="Search..."
                     InputProps={{
@@ -85,6 +87,7 @@ function NavBar() {
                     </div>
                 </div>
             </Toolbar>
+            </Container>
         </Box>
     );
 }
