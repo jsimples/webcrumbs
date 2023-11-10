@@ -56,6 +56,10 @@ const InstallButton = styled(Button)(({ theme }) => ({
     backgroundColor: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
     height: "34px",
+    "&:hover": {
+        backgroundColor: theme.palette.primary.dark,
+        color: theme.palette.primary.contrastText,
+    }
 }));
 
 export function PluginCard({ plugin }: { plugin: Plugin }) {
