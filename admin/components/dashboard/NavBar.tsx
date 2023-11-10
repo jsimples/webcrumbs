@@ -53,7 +53,7 @@ function NavBar() {
                     }}
                 />
 
-                <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '16px' }}>
                     <Image alt='notification' src={iconNotification} />
                     <Image alt='message' src={iconMessage} />
                     <div>
@@ -72,16 +72,15 @@ function NavBar() {
                             open={Boolean(anchorEl)}
                             onClose={handleMenuClose}
                         >
-                            <MenuItem>
-                                <Image alt="Alex" src={profilePic} style={{ borderRadius: '50%' }} />
+                            <MenuItem sx={{ minWidth: '260px' }}>
+                                <Image alt="Alex" src={profilePic} style={{ borderRadius: '50%', marginRight: '12px' }} />
                                 <div>
-                                    <Typography variant="body1">Alex</Typography>
-                                    <Typography variant="body2" color="#8A92A6">
-                                        Admin
-                                    </Typography>
+                                    <Typography variant="body1" sx={{ marginTop: 0 }}>Alex</Typography>
+                                    <Typography variant="body2">Admin</Typography>
                                 </div>
                             </MenuItem>
-                            <MenuItem>Configuration</MenuItem>
+                            <MenuItem><Typography variant="body2">My account</Typography></MenuItem>
+                            <MenuItem><Typography variant="body2">Logout</Typography></MenuItem>
                         </Menu>
                     </div>
                 </div>
